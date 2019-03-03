@@ -1,0 +1,110 @@
+body{
+ background-color: lightblue;
+ font-family:San-serif;
+ background-image:url("https://wonderopolis.org/_img?img=/wp-content/uploads/2015/02/1411_f.jpg&transform=resizeCrop,720,450") ;
+background-size:2000px;
+}
+
+.head{
+font-family: Lobster;
+font-size:50px;
+text-align: center;
+color: aliceblue;
+background-color: black;
+
+}
+
+
+h1 {
+  animation:glow 10s ease-in-out infinite;
+  transform-style: preserve-3d;
+}
+
+
+@keyframes glow {
+  0%,100%{ text-shadow:0 0 100px red; }
+      25%{ text-shadow:0 0 100px blue; }
+      50%{ text-shadow:0 0 100px lightgoldenrodyellow; }
+      75%{ text-shadow:0 0 100px cyan; }
+}
+
+
+
+.div_2{
+  background-color:palegreen;
+  border-left:2px solid black;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom:2px solid black;
+  padding:10px 10px 10px 10px  ;
+  position:absolute;
+  top:10%;
+  left:37%;
+  
+}
+
+
+
+
+.type{
+
+  padding: 4px 4px 4px 4px ;
+  margin:5px 5px 5px 5px ;
+
+}
+
+.box{
+  radius:10px;
+  font-size:50px;
+
+
+
+}
+
+ 
+
+.box_2{
+  background-color:cyan;
+  border-right:2px solid black;
+  border-left:2px solid black;
+  border-bottom:2px solid black;
+  border-top:2px solid black;
+  padding:20px 20px 20px 20px;
+}
+
+
+.button{
+  radius:10px 10px 10px 10px ;
+  font-size:20px;
+  padding:10px 10px 10px 10px;
+  position:static;
+  width :50px;
+  height :50px;
+  margin:5px;
+  border-radius:5px; 
+
+
+}
+
+
+.button_2{
+  radius:10px 10px 10px 10px ;
+  font-size:20px;
+  padding:10px 10px 10px 10px;
+  position:static;
+  width :50px;
+  height :50px;
+  margin:5px;
+  border-radius:5px; 
+  background-color:red;
+
+
+}
+
+.text{
+  width :245px;
+  height:40px;
+  margin:5px;
+
+}
+
