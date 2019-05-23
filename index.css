@@ -18,12 +18,8 @@ body{
     border: 4px double black;
     font-size:35px;
     background: white;
-
-
 }
-#number:focus{
 
-}
 
 .buttons{
     margin-top:4%;
@@ -38,10 +34,18 @@ body{
     transition: ease-in-out;
     transition-property: scale();
     transition-duration: .5s;
-    border-radius: 100%;
+    border-radius: 10px;
     border:2px solid black;
-    background-color: transparent;
+}
+
+.num_num{
+    background-color: rgb(94, 238, 94);
 }
 .number-btn:hover{
     transform: scale(0.75);
+}
+
+.arith{
+    background-color: rgb(253, 132, 132);
+    
 }
