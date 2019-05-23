@@ -11,8 +11,12 @@
 
         function clear_all(){
             document.getElementById('number').value = 0;
-            num = 0;
             count=0;
+            num[0]=0;
+            num[1]=0;
+            sum=0;
+            cmd_var = 0;
+            document.location.reload();
         }
         function remove_one(){
             a= document.getElementById('number').value;
@@ -22,30 +26,30 @@
         }
 
         function add(){
-            document.getElementById('number').value = 0;
+            document.getElementById('number').value = 'add';
             cmd_var = '+';
             count= count+1 ;
         }
 
         function mul(){
-            document.getElementById('number').value = 0;
+            document.getElementById('number').value = 'mul';
             cmd_var = '*';
             count= count+1 ;
         }
 
         function sub(){
-            document.getElementById('number').value = 0;
+            document.getElementById('number').value = 'sub';
             cmd_var = '-';
             count= count+1 ;
         }
 
         function div(){
-            document.getElementById('number').value = 0;
+            document.getElementById('number').value = 'div';
             cmd_var = '/';
             count= count+1 ;
         }
         function mod(){
-            document.getElementById('number').value = 0;
+            document.getElementById('number').value = 'mod';
             cmd_var = '%';
             count= count+1 ;
         }
@@ -53,23 +57,23 @@
         function sum(){
             if(cmd_var == '+'){
                 ans=   num[0] + num[1] ;
-                document.getElementById('number').value = ans;
+                document.getElementById('number').value = 'Sum =' +  ans;
             }
             else if(cmd_var == '*'){
                 ans=   num[0] * num[1] ;
-                document.getElementById('number').value = ans;
+                document.getElementById('number').value = "mul = " + sum ;
             }
             else if(cmd_var == '-'){
                 ans=   num[0] - num[1] ;
-                document.getElementById('number').value = ans;
+                document.getElementById('number').value = 'sub = ' + ans;
             }
             else if(cmd_var == '/'){
                 ans =   num[0] / num[1] ;
-                document.getElementById('number').value = ans;
+                document.getElementById('number').value = 'div = ' + ans;
             }
             else if(cmd_var == '%'){
                 ans =   num[0] % num[1] ;
-                document.getElementById('number').value = ans;
+                document.getElementById('number').value = "mod = " + ans;
             }
         }
 
